@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Product - Habrio</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <main class="w-full max-w-md p-6 bg-white rounded shadow-md">
+    <h1 class="text-2xl font-semibold mb-4 text-center">Add New Product</h1>
+    <form action="vendor-dashboard.html" method="get" class="space-y-4">
+      <div>
+        <label for="title" class="block text-sm font-medium text-gray-700">Title</label>
+        <input id="title" name="title" type="text" required class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="brand" class="block text-sm font-medium text-gray-700">Brand</label>
+        <input id="brand" name="brand" type="text" class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="mrp" class="block text-sm font-medium text-gray-700">MRP</label>
+        <input id="mrp" name="mrp" type="number" step="0.01" class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="price" class="block text-sm font-medium text-gray-700">Price</label>
+        <input id="price" name="price" type="number" step="0.01" class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="unit" class="block text-sm font-medium text-gray-700">Unit</label>
+        <input id="unit" name="unit" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" placeholder="kg, packet, etc.">
+      </div>
+      <div>
+        <label for="stock" class="block text-sm font-medium text-gray-700">Quantity in Stock</label>
+        <input id="stock" name="stock" type="number" class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="category" class="block text-sm font-medium text-gray-700">Category</label>
+        <input id="category" name="category" type="text" class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="description" class="block text-sm font-medium text-gray-700">Description</label>
+        <textarea id="description" name="description" rows="3" class="mt-1 block w-full border-gray-300 rounded p-2"></textarea>
+      </div>
+      <div>
+        <label for="imageUrl" class="block text-sm font-medium text-gray-700">Image URL</label>
+        <input id="imageUrl" name="imageUrl" type="url" class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add Product</button>
+    </form>
+  </main>
+</body>
+</html>

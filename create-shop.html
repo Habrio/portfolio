@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Shop - Habrio</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+  <main class="w-full max-w-md p-6 bg-white rounded shadow-md">
+    <h1 class="text-2xl font-semibold mb-4 text-center">Create Your Shop</h1>
+    <form action="vendor-dashboard.html" method="get" class="space-y-4">
+      <div>
+        <label for="shopName" class="block text-sm font-medium text-gray-700">Shop Name</label>
+        <input id="shopName" name="shopName" type="text" required class="mt-1 block w-full border-gray-300 rounded p-2">
+      </div>
+      <div>
+        <label for="shopType" class="block text-sm font-medium text-gray-700">Shop Type</label>
+        <select id="shopType" name="shopType" class="mt-1 block w-full border-gray-300 rounded p-2">
+          <option>Grocery</option>
+          <option>Salon</option>
+          <option>Pharmacy</option>
+          <option>Other</option>
+        </select>
+      </div>
+      <div>
+        <label for="logoUrl" class="block text-sm font-medium text-gray-700">Logo URL (optional)</label>
+        <input id="logoUrl" name="logoUrl" type="url" class="mt-1 block w-full border-gray-300 rounded p-2" placeholder="https://...">
+      </div>
+      <div class="flex items-center">
+        <input id="isOpen" name="isOpen" type="checkbox" class="h-4 w-4 text-blue-600 border-gray-300 rounded">
+        <label for="isOpen" class="ml-2 block text-sm text-gray-700">Is Open</label>
+      </div>
+      <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Create Shop</button>
+    </form>
+  </main>
+</body>
+</html>
