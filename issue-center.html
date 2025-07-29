@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Issue Center - Habrio</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <header class="max-w-2xl mx-auto mb-6">
+    <h1 class="text-2xl font-semibold text-center">Issue Center</h1>
+  </header>
+  <main class="max-w-2xl mx-auto space-y-6">
+    <section class="bg-white p-4 rounded shadow">
+      <h2 class="font-semibold mb-2">Customer Complaints</h2>
+      <ul class="space-y-2 text-sm">
+        <li class="border-b pb-2">
+          <p class="font-medium">Order #HBR1005</p>
+          <p class="text-gray-600">Received damaged item</p>
+        </li>
+        <li class="border-b pb-2">
+          <p class="font-medium">Order #HBR1007</p>
+          <p class="text-gray-600">Late delivery</p>
+        </li>
+        <li>
+          <p class="font-medium">Order #HBR1011</p>
+          <p class="text-gray-600">Wrong quantity delivered</p>
+        </li>
+      </ul>
+    </section>
+    <section class="bg-white p-4 rounded shadow">
+      <h2 class="font-semibold mb-2">Return Requests</h2>
+      <div class="space-y-2">
+        <div class="flex justify-between items-center border-b pb-2 text-sm">
+          <p class="font-medium">Order #HBR1010 - Mixer Grinder</p>
+          <div class="space-x-2">
+            <button class="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700">Approve</button>
+            <button class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700">Reject</button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center border-b pb-2 text-sm">
+          <p class="font-medium">Order #HBR1008 - Rice Cooker</p>
+          <div class="space-x-2">
+            <button class="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700">Approve</button>
+            <button class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700">Reject</button>
+          </div>
+        </div>
+        <div class="flex justify-between items-center text-sm">
+          <p class="font-medium">Order #HBR1006 - Hair Dryer</p>
+          <div class="space-x-2">
+            <button class="px-3 py-1 bg-green-600 text-white rounded hover:bg-green-700">Approve</button>
+            <button class="px-3 py-1 bg-red-600 text-white rounded hover:bg-red-700">Reject</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="text-center">
+      <a href="vendor-dashboard.html" class="text-blue-600 hover:underline">Back to Dashboard</a>
+    </div>
+  </main>
+</body>
+</html>
