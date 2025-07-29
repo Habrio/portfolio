@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Delivered - Habrio</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <header class="max-w-2xl mx-auto mb-6">
+    <h1 class="text-2xl font-semibold text-center">Mark Order Delivered</h1>
+  </header>
+  <main class="max-w-2xl mx-auto space-y-4">
+    <div class="bg-white p-4 rounded shadow space-y-2">
+      <p><span class="font-semibold">Order ID:</span> HBR1093</p>
+      <p><span class="font-semibold">Status:</span> Accepted</p>
+      <div>
+        <h2 class="font-semibold mb-1">Items</h2>
+        <ul class="list-disc ml-5 text-sm">
+          <li>Rice x2</li>
+          <li>Dal x1</li>
+          <li>Soap x3</li>
+        </ul>
+      </div>
+      <p class="text-xs text-gray-500">Wallet will be credited if prepaid.</p>
+    </div>
+    <form action="order-list.html" method="get">
+      <button type="submit" class="w-full py-2 bg-green-600 text-white rounded hover:bg-green-700">Mark as Delivered</button>
+    </form>
+  </main>
+</body>
+</html>
