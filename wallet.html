@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Wallet - Habrio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4 flex flex-col items-center">
+  <header class="w-full max-w-xl text-center mb-6">
+    <h1 class="text-2xl font-semibold">My Wallet</h1>
+  </header>
+  <section class="w-full max-w-xl space-y-4">
+    <div class="bg-white p-4 rounded shadow text-center space-y-2">
+      <p class="text-gray-600">Wallet Balance</p>
+      <p class="text-3xl font-bold">₹500</p>
+    </div>
+    <div class="bg-white p-4 rounded shadow">
+      <h2 class="font-semibold mb-2">Transactions</h2>
+      <ul class="text-sm space-y-1">
+        <li class="flex justify-between"><span>Added</span><span>+₹200</span></li>
+        <li class="flex justify-between"><span>Payment</span><span>-₹100</span></li>
+        <li class="flex justify-between"><span>Refund</span><span>+₹50</span></li>
+      </ul>
+    </div>
+  </section>
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-around text-xs">
+    <a href="shops.html" class="text-blue-600">Home</a>
+    <a href="cart.html" class="text-blue-600">Cart</a>
+    <a href="order-history.html" class="text-blue-600">Orders</a>
+    <a href="profile.html" class="text-blue-600">Profile</a>
+    <a href="wallet.html" class="text-blue-600">Wallet</a>
+  </footer>
+</body>
+</html>
