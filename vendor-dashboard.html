@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Dashboard - Habrio</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <header class="max-w-2xl mx-auto mb-6">
+    <h1 class="text-2xl font-semibold text-center">Vendor Dashboard</h1>
+  </header>
+  <main class="max-w-2xl mx-auto space-y-6">
+    <div class="bg-white p-4 rounded shadow">
+      <h2 class="text-lg font-bold flex justify-between items-center">
+        <span>My Shop</span>
+        <span class="text-sm px-2 py-1 rounded bg-green-100 text-green-700">Open</span>
+      </h2>
+      <div class="mt-2 grid grid-cols-2 gap-4 text-center">
+        <div>
+          <p class="text-sm text-gray-500">Wallet Balance</p>
+          <p class="font-semibold">₹1,200</p>
+        </div>
+        <div>
+          <p class="text-sm text-gray-500">Total Orders</p>
+          <p class="font-semibold">15</p>
+        </div>
+      </div>
+      <div class="mt-4 flex justify-between">
+        <a href="add-item.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add New Item</a>
+        <a href="order-list.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">View Orders</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
