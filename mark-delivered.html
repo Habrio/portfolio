@@ -32,7 +32,8 @@ tailwind.config = {
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="min-h-screen bg-background-soft">
+<body class="min-h-screen bg-background-soft flex flex-col items-center">
+  <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative">
   <header class="max-w-2xl mx-auto mb-6">
     <h1 class="text-lg font-bold text-text-primary mb-4">Mark Order Delivered</h1>
   </header>
@@ -54,13 +55,15 @@ tailwind.config = {
       <button class="w-full py-3 rounded-md bg-primary text-white hover:bg-primary-dark transition">Mark as Delivered</button>
     </form>
   </main>
-  <footer class="fixed bottom-0 left-0 right-0 bg-background shadow-card py-2 flex justify-around text-sm">
-    <a href="vendor-dashboard.html" class="text-blue-600">Dashboard</a>
-    <a href="item-list.html" class="text-blue-600">Items</a>
-    <a href="order-list.html" class="text-blue-600">Orders</a>
-    <a href="vendor-wallet.html" class="text-blue-600">Wallet</a>
-    <a href="issue-center.html" class="text-blue-600">Issues</a>
-    <a href="vendor-profile.html" class="text-blue-600">Profile</a>
-  </footer>
+
+<nav class="flex justify-between bg-background border-t border-divider absolute bottom-0 inset-x-0">
+  <a href="vendor-home.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/home.svg" class="mx-auto w-5" />Dash</a>
+  <a href="item-list.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/squares-plus.svg" class="mx-auto w-5" />Items</a>
+  <a href="order-list.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/clipboard-document-list.svg" class="mx-auto w-5" />Orders</a>
+  <a href="vendor-wallet.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/wallet.svg" class="mx-auto w-5" />Wallet</a>
+  <a href="issue-center.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/exclamation-circle.svg" class="mx-auto w-5" />Issues</a>
+</nav>
+  
+</div>
 </body>
 </html>

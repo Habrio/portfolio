@@ -32,13 +32,14 @@ tailwind.config = {
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="min-h-screen bg-background-soft">
+<body class="min-h-screen bg-background-soft flex flex-col items-center">
+  <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative">
   <main class="max-w-sm mx-auto bg-background shadow-card rounded-lg p-4">
     <h1 class="text-lg font-bold text-text-primary mb-4">Create Your Shop</h1>
     <form action="vendor-dashboard.html" method="get" class="space-y-4">
       <div>
         <label class="text-sm text-text-secondary">Shop Name</label>
-        <input class="w-full border border-divider rounded-md p-3 mb-3 focus:outline-none focus:ring-2 focus:ring-primary">
+        <input value="John Doe" class="w-full border border-divider rounded-md p-3 mb-3 focus:outline-none focus:ring-2 focus:ring-primary">
       </div>
       <div>
         <label class="text-sm text-text-secondary">Shop Type</label>
@@ -51,22 +52,26 @@ tailwind.config = {
       </div>
       <div>
         <label class="text-sm text-text-secondary">Logo URL (optional)</label>
-        <input class="w-full border border-divider rounded-md p-3 mb-3 focus:outline-none focus:ring-2 focus:ring-primary">
+        <input value="Sample" class="w-full border border-divider rounded-md p-3 mb-3 focus:outline-none focus:ring-2 focus:ring-primary">
       </div>
       <div class="flex items-center">
-        <input class="w-full border border-divider rounded-md p-3 mb-3 focus:outline-none focus:ring-2 focus:ring-primary">
+        <input value="Sample" class="w-full border border-divider rounded-md p-3 mb-3 focus:outline-none focus:ring-2 focus:ring-primary">
         <label class="text-sm text-text-secondary">Is Open</label>
       </div>
       <button class="w-full py-3 rounded-md bg-primary text-white hover:bg-primary-dark transition">Create Shop</button>
     </form>
   </main>
-<nav class="fixed bottom-0 left-0 right-0 max-w-sm mx-auto flex justify-between bg-background shadow-card p-2 text-xs">
-  <a href="index.html" class="flex-1 text-center">Home</a>
-  <a href="cart.html" class="flex-1 text-center">Cart</a>
-  <a href="order-history.html" class="flex-1 text-center">Orders</a>
-  <a href="profile.html" class="flex-1 text-center">Profile</a>
+
+<nav class="flex justify-between bg-background border-t border-divider absolute bottom-0 inset-x-0">
+  <a href="vendor-home.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/home.svg" class="mx-auto w-5" />Dash</a>
+  <a href="item-list.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/squares-plus.svg" class="mx-auto w-5" />Items</a>
+  <a href="order-list.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/clipboard-document-list.svg" class="mx-auto w-5" />Orders</a>
+  <a href="vendor-wallet.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/wallet.svg" class="mx-auto w-5" />Wallet</a>
+  <a href="issue-center.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/exclamation-circle.svg" class="mx-auto w-5" />Issues</a>
 </nav>
 
+
   
+</div>
 </body>
 </html>

@@ -56,7 +56,8 @@ tailwind.config = {
 <script src="https://cdn.tailwindcss.com"></script>
 
 </head>
-<body class="min-h-screen bg-background-soft">
+<body class="min-h-screen bg-background-soft flex flex-col items-center">
+  <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative">
 <main class="max-w-sm mx-auto bg-background shadow-card rounded-lg p-4">
   <header class="w-full max-w-xl text-center mb-6">
     <h1 class="text-lg font-bold text-text-primary mb-4">Nearby Shops in Your Society</h1>
@@ -109,11 +110,15 @@ tailwind.config = {
   </section>
   
 </main>
-<nav class="fixed bottom-0 left-0 right-0 max-w-sm mx-auto flex justify-between bg-background shadow-card p-2 text-xs">
-  <a href="index.html" class="flex-1 text-center">Home</a>
-  <a href="cart.html" class="flex-1 text-center">Cart</a>
-  <a href="order-history.html" class="flex-1 text-center">Orders</a>
-  <a href="profile.html" class="flex-1 text-center">Profile</a>
+
+<nav class="flex justify-between bg-background border-t border-divider absolute bottom-0 inset-x-0">
+  <a href="customer-home.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/home.svg" class="mx-auto w-5" />Home</a>
+  <a href="cart.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/shopping-cart.svg" class="mx-auto w-5" />Cart</a>
+  <a href="order-history.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/clipboard-document-list.svg" class="mx-auto w-5" />Orders</a>
+  <a href="profile.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/user-circle.svg" class="mx-auto w-5" />Profile</a>
+  <a href="wallet.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/wallet.svg" class="mx-auto w-5" />Wallet</a>
 </nav>
+
+</div>
 </body>
 </html>
