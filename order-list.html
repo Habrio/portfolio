@@ -5,16 +5,41 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Incoming Orders - Habrio</title>
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
-  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+/* Tailwind inline theme – no build step required */
+tailwind.config = {
+  theme: {
+    screens:      { sm:'640px', md:'768px', lg:'1024px', xl:'1280px', '2xl':'1536px' },
+    extend: {
+      colors:{
+        primary:'#FF9933', 'primary-dark':'#e68a00',
+        accent:'#138808','accent-dark':'#0f6a06',
+        background:'#FFFFFF','background-soft':'#F5F5F5',
+        'text-primary':'#212121','text-secondary':'#6B7280', divider:'#E0E0E0',
+        error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'
+      },
+      borderRadius:{ sm:'4px',md:'8px',lg:'12px',xl:'16px','2xl':'24px' },
+      boxShadow:{ card:'0 1px 3px rgba(0,0,0,.1)', elevated:'0 4px 12px rgba(0,0,0,.15)' },
+      fontFamily:{ sans:['Inter','sans-serif'] },
+      fontSize:{
+        xs:['12px','16px'], sm:['14px','20px'], base:['16px','24px'],
+        lg:['18px','28px'], xl:['20px','28px'], '2xl':['24px','32px'], '3xl':['30px','36px']
+      }
+    }
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
 </head>
-<body class="bg-gray-100 min-h-screen p-4">
+<body class="min-h-screen bg-background-soft">
   <header class="max-w-2xl mx-auto mb-6">
-    <h1 class="text-2xl font-semibold text-center">Incoming Orders</h1>
+    <h1 class="text-lg font-bold text-text-primary mb-4">Incoming Orders</h1>
   </header>
-  <main class="max-w-2xl mx-auto space-y-4">
+  <main class="max-w-sm mx-auto bg-background shadow-card rounded-lg p-4">
     <div class="bg-white p-4 rounded shadow">
       <h2 class="font-semibold">Order #HBR2001</h2>
-      <p class="text-sm text-gray-600">COD - Pending</p>
+      <p class="text-sm text-text-secondary">COD - Pending</p>
       <ul class="text-sm ml-4 list-disc mt-2">
         <li>Rice x2</li>
         <li>Shampoo x1</li>
@@ -26,7 +51,7 @@
     </div>
     <div class="bg-white p-4 rounded shadow">
       <h2 class="font-semibold">Order #HBR2002</h2>
-      <p class="text-sm text-gray-600">UPI - Accepted</p>
+      <p class="text-sm text-text-secondary">UPI - Accepted</p>
       <ul class="text-sm ml-4 list-disc mt-2">
         <li>Milk x3</li>
       </ul>
@@ -36,7 +61,7 @@
       </div>
     </div>
   </main>
-  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-around text-sm">
+  <footer class="fixed bottom-0 left-0 right-0 bg-background shadow-card py-2 flex justify-around text-sm">
     <a href="vendor-dashboard.html" class="text-blue-600">Dashboard</a>
     <a href="item-list.html" class="text-blue-600">Items</a>
     <a href="order-list.html" class="text-blue-600">Orders</a>
