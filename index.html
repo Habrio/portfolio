@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Booking App</title>
+  <link rel="icon" type="image/svg+xml" href="icons/home.svg">
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme:{extend:{
+      colors:{
+        primary:'#FF6F00',
+        'primary-dark':'#E55D00',
+        accent:'#43A047',
+        'accent-dark':'#388E3C',
+        background:'#FFFFFF',
+        'background-soft':'#F5F5F5',
+        'text-primary':'#212121',
+        'text-secondary':'#6B7280',
+        divider:'#E0E0E0'
+      }
+    }}
+  }
+  </script>
+</head>
+<body class="min-h-screen bg-background-soft flex flex-col text-text-primary">
+  <!-- Container -->
+  <div class="max-w-md mx-auto flex flex-col min-h-screen bg-background shadow-lg">
+    <!-- Top Banner -->
+    <header class="bg-gradient-to-r from-primary to-accent text-white p-4 shadow-lg">
+      <div class="flex items-center justify-between">
+        <h1 class="text-2xl font-semibold">We’re delivering to your society</h1>
+        <img src="icons/user-circle.svg" alt="Profile" class="w-10 h-10">
+      </div>
+      <div class="mt-4">
+        <div class="flex items-center bg-white rounded-md shadow-md overflow-hidden">
+          <input type="text" class="flex-1 px-3 py-2 text-sm text-text-primary placeholder:text-text-secondary outline-none" placeholder="Select your address" value="221B Baker Street" />
+          <svg class="w-5 h-5 text-gray-400 mr-3" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 9l3.75 3.75 3.75-3.75" />
+          </svg>
+        </div>
+      </div>
+    </header>
+
+    <!-- Search Bar -->
+    <div class="p-4">
+      <div class="relative">
+        <input type="text" placeholder="Search for shops or services" class="w-full rounded-full border border-divider py-2 pl-10 pr-10 placeholder:text-text-secondary" />
+        <svg class="absolute left-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-4.35-4.35m0 0A7.5 7.5 0 1 0 5.25 5.25a7.5 7.5 0 0 0 11.4 11.4z" />
+        </svg>
+        <svg class="absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 text-text-secondary" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
+    </div>
+
+    <!-- Filtering Tabs -->
+    <div class="px-4 pb-4 overflow-x-auto">
+      <div class="flex space-x-2">
+        <button class="px-4 py-2 rounded-full bg-primary text-white whitespace-nowrap">All</button>
+        <button class="px-4 py-2 rounded-full border border-divider text-text-secondary whitespace-nowrap">Groceries</button>
+        <button class="px-4 py-2 rounded-full border border-divider text-text-secondary whitespace-nowrap">Pharmacy</button>
+        <button class="px-4 py-2 rounded-full border border-divider text-text-secondary whitespace-nowrap">Laundry</button>
+        <button class="px-4 py-2 rounded-full border border-divider text-text-secondary whitespace-nowrap">Electronics</button>
+      </div>
+    </div>
+
+    <!-- Shop Listings -->
+    <main class="flex-1 overflow-y-auto px-4 space-y-4">
+      <div class="bg-white rounded-lg shadow-md flex overflow-hidden">
+        <img src="https://via.placeholder.com/100" alt="Shop" class="w-24 h-24 object-cover">
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="text-lg font-semibold">Local Grocery</h3>
+            <p class="text-sm text-text-secondary">Fresh daily essentials</p>
+          </div>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-yellow-500">&#9733; 4.5</span>
+            <span class="px-2 py-1 rounded-full text-white bg-accent text-xs">Open</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md flex overflow-hidden">
+        <img src="https://via.placeholder.com/100" alt="Shop" class="w-24 h-24 object-cover">
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="text-lg font-semibold">Neighborhood Pharmacy</h3>
+            <p class="text-sm text-text-secondary">Medicines &amp; wellness</p>
+          </div>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-yellow-500">&#9733; 4.7</span>
+            <span class="px-2 py-1 rounded-full text-white bg-gray-400 text-xs">Closed</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-white rounded-lg shadow-md flex overflow-hidden">
+        <img src="https://via.placeholder.com/100" alt="Shop" class="w-24 h-24 object-cover">
+        <div class="p-4 flex flex-col justify-between flex-1">
+          <div>
+            <h3 class="text-lg font-semibold">Speedy Laundry</h3>
+            <p class="text-sm text-text-secondary">Quick door-step service</p>
+          </div>
+          <div class="flex items-center justify-between text-sm">
+            <span class="text-yellow-500">&#9733; 4.3</span>
+            <span class="px-2 py-1 rounded-full text-white bg-accent text-xs">Open</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Bottom Navigation Bar -->
+    <nav class="flex justify-around bg-white border-t shadow fixed bottom-0 inset-x-0 py-2">
+      <a href="#" class="flex flex-col items-center text-primary text-xs">
+        <img src="icons/home.svg" alt="Home" class="w-6 h-6 mb-1">
+        Home
+      </a>
+      <a href="#" class="flex flex-col items-center text-text-secondary text-xs">
+        <img src="icons/clipboard-document-list.svg" alt="Orders" class="w-6 h-6 mb-1">
+        Orders
+      </a>
+      <a href="#" class="flex flex-col items-center text-text-secondary text-xs">
+        <img src="icons/wallet.svg" alt="Wallet" class="w-6 h-6 mb-1">
+        Wallet
+      </a>
+      <a href="#" class="flex flex-col items-center text-text-secondary text-xs">
+        <img src="icons/user-circle.svg" alt="Profile" class="w-6 h-6 mb-1">
+        Profile
+      </a>
+    </nav>
+  </div>
+</body>
+</html>
