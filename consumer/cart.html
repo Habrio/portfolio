@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habrio Portfolio - Cart</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script>
+/* Tailwind inline theme – no build step required */
+tailwind.config = {
+  theme: {
+    screens:      { sm:'640px', md:'768px', lg:'1024px', xl:'1280px', '2xl':'1536px' },
+    extend: {
+      colors:{
+        primary:'#FF9933', 'primary-dark':'#e68a00',
+        accent:'#138808','accent-dark':'#0f6a06',
+        background:'#FFFFFF','background-soft':'#F5F5F5',
+        'text-primary':'#212121','text-secondary':'#6B7280', divider:'#E0E0E0',
+        error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'
+      },
+      borderRadius:{ sm:'4px',md:'8px',lg:'12px',xl:'16px','2xl':'24px' },
+      boxShadow:{ card:'0 1px 3px rgba(0,0,0,.1)', elevated:'0 4px 12px rgba(0,0,0,.15)' },
+      fontFamily:{ sans:['Inter','sans-serif'] },
+      fontSize:{
+        xs:['12px','16px'], sm:['14px','20px'], base:['16px','24px'],
+        lg:['18px','28px'], xl:['20px','28px'], '2xl':['24px','32px'], '3xl':['30px','36px']
+      }
+    }
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="min-h-screen bg-background-soft flex flex-col items-center">
+  <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative"><main class="max-w-sm mx-auto bg-background shadow-card rounded-lg p-4">
+    <img src="https://source.unsplash.com/featured/?shopping" class="w-full h-40 object-cover rounded mb-4" />
+  <header class="w-full max-w-xl text-center mb-6">
+    <h1 class="text-lg font-bold text-text-primary mb-4">Your Cart</h1>
+  </header>
+  <section class="w-full max-w-xl bg-white rounded shadow p-4 space-y-4">
+    <div class="flex justify-between items-center">
+      <div>
+        <h2 class="font-semibold">Basmati Rice</h2>
+        <p class="text-sm text-text-secondary">Quantity: 2</p>
+      </div>
+      <span class="font-medium">₹198</span>
+    </div>
+    <div class="flex justify-between items-center">
+      <div>
+        <h2 class="font-semibold">Fresh Milk</h2>
+        <p class="text-sm text-text-secondary">Quantity: 1</p>
+      </div>
+      <span class="font-medium">₹28</span>
+    </div>
+    <div class="flex justify-between items-center">
+      <div>
+        <h2 class="font-semibold">Sunflower Oil</h2>
+        <p class="text-sm text-text-secondary">Quantity: 1</p>
+      </div>
+      <span class="font-medium">₹165</span>
+    </div>
+    <div class="border-t pt-4">
+      <p class="text-sm text-text-secondary"><span>Total</span> <span>₹391</span></p>
+      <p class="text-sm text-text-secondary"><span>Total Savings</span> <span>₹42</span></p>
+    </div>
+    <div class="flex justify-between pt-4">
+      <a href="shops.html" class="px-4 py-2 bg-gray-200 rounded">Continue Shopping</a>
+      <a href="order-summary.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Proceed to Order Summary</a>
+    </div>
+  </section>
+  
+</main>
+
+<nav class="flex justify-between bg-background border-t border-divider absolute bottom-0 inset-x-0">
+  <a href="customer-home.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/home.svg" class="mx-auto w-5" />Home</a>
+  <a href="cart.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/shopping-cart.svg" class="mx-auto w-5" />Cart</a>
+  <a href="order-history.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/clipboard-document-list.svg" class="mx-auto w-5" />Orders</a>
+  <a href="profile.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/user-circle.svg" class="mx-auto w-5" />Profile</a>
+  <a href="wallet.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/wallet.svg" class="mx-auto w-5" />Wallet</a>
+</nav>
+
+
+
+</div>
+</body>
+</html>

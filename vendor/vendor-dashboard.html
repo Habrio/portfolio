@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vendor Dashboard - Habrio</title>
+  <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
+  <script>
+/* Tailwind inline theme – no build step required */
+tailwind.config = {
+  theme: {
+    screens:      { sm:'640px', md:'768px', lg:'1024px', xl:'1280px', '2xl':'1536px' },
+    extend: {
+      colors:{
+        primary:'#FF9933', 'primary-dark':'#e68a00',
+        accent:'#138808','accent-dark':'#0f6a06',
+        background:'#FFFFFF','background-soft':'#F5F5F5',
+        'text-primary':'#212121','text-secondary':'#6B7280', divider:'#E0E0E0',
+        error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'
+      },
+      borderRadius:{ sm:'4px',md:'8px',lg:'12px',xl:'16px','2xl':'24px' },
+      boxShadow:{ card:'0 1px 3px rgba(0,0,0,.1)', elevated:'0 4px 12px rgba(0,0,0,.15)' },
+      fontFamily:{ sans:['Inter','sans-serif'] },
+      fontSize:{
+        xs:['12px','16px'], sm:['14px','20px'], base:['16px','24px'],
+        lg:['18px','28px'], xl:['20px','28px'], '2xl':['24px','32px'], '3xl':['30px','36px']
+      }
+    }
+  }
+}
+</script>
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+<body class="min-h-screen bg-background-soft flex flex-col items-center">
+  <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative"><header class="max-w-2xl mx-auto mb-6">
+    <h1 class="text-lg font-bold text-text-primary mb-4">Vendor Dashboard</h1>
+  </header>
+  <main class="max-w-sm mx-auto bg-background shadow-card rounded-lg p-4">
+    <img src="https://source.unsplash.com/featured/?store" class="w-full h-40 object-cover rounded mb-4" />
+    <div class="bg-white p-4 rounded shadow">
+      <h2 class="text-lg font-bold flex justify-between items-center">
+        <span>My Shop</span>
+        <span class="text-sm px-2 py-1 rounded bg-green-100 text-green-700">Open</span>
+      </h2>
+      <div class="mt-2 grid grid-cols-2 gap-4 text-center">
+        <div>
+          <p class="text-sm text-text-secondary">Wallet Balance</p>
+          <p class="text-sm text-text-secondary">₹1,200</p>
+        </div>
+        <div>
+          <p class="text-sm text-text-secondary">Total Orders</p>
+          <p class="text-sm text-text-secondary">15</p>
+        </div>
+      </div>
+      <div class="mt-4 grid grid-cols-2 gap-2 text-center text-sm">
+        <a href="add-item.html" class="py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add New Item</a>
+        <a href="item-list.html" class="py-2 bg-blue-600 text-white rounded hover:bg-blue-700">View Items</a>
+        <a href="order-list.html" class="py-2 bg-blue-600 text-white rounded hover:bg-blue-700">View Orders</a>
+        <a href="vendor-wallet.html" class="py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Wallet</a>
+        <a href="issue-center.html" class="py-2 bg-blue-600 text-white rounded hover:bg-blue-700 col-span-2">Issues</a>
+      </div>
+    </div>
+  </main>
+
+<nav class="flex justify-between bg-background border-t border-divider absolute bottom-0 inset-x-0">
+  <a href="vendor-home.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/home.svg" class="mx-auto w-5" />Dash</a>
+  <a href="item-list.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/squares-plus.svg" class="mx-auto w-5" />Items</a>
+  <a href="order-list.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/clipboard-document-list.svg" class="mx-auto w-5" />Orders</a>
+  <a href="vendor-wallet.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/wallet.svg" class="mx-auto w-5" />Wallet</a>
+  <a href="issue-center.html" class="flex-1 py-3 text-center text-xs"><img src="https://unpkg.com/heroicons@2.1.0/24/exclamation-circle.svg" class="mx-auto w-5" />Issues</a>
+</nav>
+
+
+  
+</div>
+</body>
+</html>
