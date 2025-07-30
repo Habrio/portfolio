@@ -4,34 +4,20 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Bulk Upload Items - Habrio</title>
-  <script>
-/* Tailwind inline theme – no build step required */
-tailwind.config = {
-  theme: {
-    screens:      { sm:'640px', md:'768px', lg:'1024px', xl:'1280px', '2xl':'1536px' },
-    extend: {
-      colors:{
-        primary:'#FF9933', 'primary-dark':'#e68a00',
-        accent:'#138808','accent-dark':'#0f6a06',
-        background:'#FFFFFF','background-soft':'#F5F5F5',
-        'text-primary':'#212121','text-secondary':'#6B7280', divider:'#E0E0E0',
-        error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'
-      },
-      borderRadius:{ sm:'4px',md:'8px',lg:'12px',xl:'16px','2xl':'24px' },
-      boxShadow:{ card:'0 1px 3px rgba(0,0,0,.1)', elevated:'0 4px 12px rgba(0,0,0,.15)' },
-      fontFamily:{ sans:['Inter','sans-serif'] },
-      fontSize:{
-        xs:['12px','16px'], sm:['14px','20px'], base:['16px','24px'],
-        lg:['18px','28px'], xl:['20px','28px'], '2xl':['24px','32px'], '3xl':['30px','36px']
-      }
-    }
-  }
-}
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
+  
 
+
+<script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme:{extend:{
+      colors:{primary:'#FF671F','primary-dark':'#e05500',accent:'#138808','accent-dark':'#0f6a06',background:'#FFFFFF','background-soft':'#F8F9FA','text-primary':'#212121','text-secondary':'#6B7280',divider:'#E0E0E0',error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'},
+      boxShadow:{card:'0 1px 3px rgba(0,0,0,.1)',elevated:'0 4px 12px rgba(0,0,0,.15)'}
+    }}
+  }
+  </script>
 </head>
-<body class="min-h-screen bg-background-soft flex flex-col items-center">
+<body class="min-h-screen bg-background-soft flex flex-col items-center pb-20">
   <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative"><header class="max-w-lg mx-auto mb-6 text-center">
     <h1 class="text-xl font-bold text-text-primary">Bulk Upload</h1>
   </header>
