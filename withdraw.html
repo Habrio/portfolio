@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Withdraw Funds - Habrio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <header class="max-w-lg mx-auto mb-6 text-center">
+    <h1 class="text-2xl font-semibold">Withdraw Funds</h1>
+  </header>
+  <main class="max-w-lg mx-auto">
+    <form action="vendor-wallet.html" method="get" class="bg-white p-4 rounded shadow space-y-4">
+      <div>
+        <label for="amount" class="block text-sm font-medium text-gray-700">Amount</label>
+        <input id="amount" name="amount" type="number" class="mt-1 block w-full border-gray-300 rounded p-2" />
+      </div>
+      <div>
+        <label for="bank" class="block text-sm font-medium text-gray-700">Bank Account</label>
+        <input id="bank" name="bank" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" />
+      </div>
+      <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Withdraw</button>
+    </form>
+  </main>
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-around text-sm">
+    <a href="vendor-dashboard.html" class="text-blue-600">Dashboard</a>
+    <a href="item-list.html" class="text-blue-600">Items</a>
+    <a href="order-list.html" class="text-blue-600">Orders</a>
+    <a href="vendor-wallet.html" class="text-blue-600">Wallet</a>
+    <a href="issue-center.html" class="text-blue-600">Issues</a>
+    <a href="vendor-profile.html" class="text-blue-600">Profile</a>
+  </footer>
+</body>
+</html>

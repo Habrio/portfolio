@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Vendor Profile - Habrio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <header class="max-w-lg mx-auto mb-6 text-center">
+    <h1 class="text-2xl font-semibold">Edit Vendor Profile</h1>
+  </header>
+  <main class="max-w-lg mx-auto">
+    <form action="vendor-profile.html" method="get" class="bg-white p-4 rounded shadow space-y-4">
+      <div>
+        <label for="businessName" class="block text-sm font-medium text-gray-700">Business Name</label>
+        <input id="businessName" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" value="Acme Traders">
+      </div>
+      <div>
+        <label for="businessType" class="block text-sm font-medium text-gray-700">Business Type</label>
+        <input id="businessType" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" value="Grocery">
+      </div>
+      <div>
+        <label for="gst" class="block text-sm font-medium text-gray-700">GST No.</label>
+        <input id="gst" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" value="22AAAAA0000A1Z5">
+      </div>
+      <div>
+        <label for="address" class="block text-sm font-medium text-gray-700">Address</label>
+        <textarea id="address" class="mt-1 block w-full border-gray-300 rounded p-2" rows="3">123 Market Street, Springfield</textarea>
+      </div>
+      <div>
+        <label for="shopName" class="block text-sm font-medium text-gray-700">Shop Name</label>
+        <input id="shopName" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" value="Daily Needs">
+      </div>
+      <div>
+        <label for="shopType" class="block text-sm font-medium text-gray-700">Shop Type</label>
+        <input id="shopType" type="text" class="mt-1 block w-full border-gray-300 rounded p-2" value="Grocery">
+      </div>
+      <button type="submit" class="w-full py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Save Changes</button>
+    </form>
+  </main>
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-around text-sm">
+    <a href="vendor-dashboard.html" class="text-blue-600">Dashboard</a>
+    <a href="item-list.html" class="text-blue-600">Items</a>
+    <a href="order-list.html" class="text-blue-600">Orders</a>
+    <a href="vendor-wallet.html" class="text-blue-600">Wallet</a>
+    <a href="issue-center.html" class="text-blue-600">Issues</a>
+    <a href="vendor-profile.html" class="text-blue-600">Profile</a>
+  </footer>
+</body>
+</html>
