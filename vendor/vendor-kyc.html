@@ -5,34 +5,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>KYC Setup - Habrio</title>
   <link rel="icon" type="image/png" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mP8z/C/HwAE/wMcvSbQowAAAABJRU5ErkJggg==">
-  <script>
-/* Tailwind inline theme – no build step required */
-tailwind.config = {
-  theme: {
-    screens:      { sm:'640px', md:'768px', lg:'1024px', xl:'1280px', '2xl':'1536px' },
-    extend: {
-      colors:{
-        primary:'#FF9933', 'primary-dark':'#e68a00',
-        accent:'#138808','accent-dark':'#0f6a06',
-        background:'#FFFFFF','background-soft':'#F5F5F5',
-        'text-primary':'#212121','text-secondary':'#6B7280', divider:'#E0E0E0',
-        error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'
-      },
-      borderRadius:{ sm:'4px',md:'8px',lg:'12px',xl:'16px','2xl':'24px' },
-      boxShadow:{ card:'0 1px 3px rgba(0,0,0,.1)', elevated:'0 4px 12px rgba(0,0,0,.15)' },
-      fontFamily:{ sans:['Inter','sans-serif'] },
-      fontSize:{
-        xs:['12px','16px'], sm:['14px','20px'], base:['16px','24px'],
-        lg:['18px','28px'], xl:['20px','28px'], '2xl':['24px','32px'], '3xl':['30px','36px']
-      }
-    }
-  }
-}
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
+  
 
+
+<script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {
+    theme:{extend:{
+      colors:{primary:'#FF671F','primary-dark':'#e05500',accent:'#138808','accent-dark':'#0f6a06',background:'#FFFFFF','background-soft':'#F8F9FA','text-primary':'#212121','text-secondary':'#6B7280',divider:'#E0E0E0',error:'#DC3545',success:'#138808',warning:'#FFC107',info:'#17A2B8'},
+      boxShadow:{card:'0 1px 3px rgba(0,0,0,.1)',elevated:'0 4px 12px rgba(0,0,0,.15)'}
+    }}
+  }
+  </script>
 </head>
-<body class="min-h-screen bg-background-soft flex flex-col items-center">
+<body class="min-h-screen bg-background-soft flex flex-col items-center pb-20">
   <div class="w-[390px] max-w-full min-h-screen bg-background shadow-elevated flex flex-col relative"><main class="flex-1 p-4 min-h-[calc(100vh-56px)] overflow-y-auto">
     <div class="w-full h-40 flex items-center justify-center rounded mb-4 bg-background-soft"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
   <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 21v-7.5a.75.75 0 0 1 .75-.75h3a.75.75 0 0 1 .75.75V21m-4.5 0H2.36m11.14 0H18m0 0h3.64m-1.39 0V9.349M3.75 21V9.349m0 0a3.001 3.001 0 0 0 3.75-.615A2.993 2.993 0 0 0 9.75 9.75c.896 0 1.7-.393 2.25-1.016a2.993 2.993 0 0 0 2.25 1.016c.896 0 1.7-.393 2.25-1.015a3.001 3.001 0 0 0 3.75.614m-16.5 0a3.004 3.004 0 0 1-.621-4.72l1.189-1.19A1.5 1.5 0 0 1 5.378 3h13.243a1.5 1.5 0 0 1 1.06.44l1.19 1.189a3 3 0 0 1-.621 4.72M6.75 18h3.75a.75.75 0 0 0 .75-.75V13.5a.75.75 0 0 0-.75-.75H6.75a.75.75 0 0 0-.75.75v3.75c0 .414.336.75.75.75Z"/>
