@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Items - Habrio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 min-h-screen p-4">
+  <header class="max-w-lg mx-auto mb-6 text-center">
+    <h1 class="text-2xl font-semibold">My Items</h1>
+  </header>
+  <main class="max-w-lg mx-auto space-y-4">
+    <div class="flex justify-between">
+      <a href="add-item.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Add Item</a>
+      <a href="bulk-upload.html" class="px-4 py-2 bg-blue-600 text-white rounded hover:bg-blue-700">Bulk Upload</a>
+    </div>
+    <table class="w-full bg-white rounded shadow text-sm">
+      <thead>
+        <tr class="border-b">
+          <th class="p-2 text-left">Item</th>
+          <th class="p-2 text-center">Price</th>
+          <th class="p-2 text-center">Stock</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="border-b">
+          <td class="p-2">Rice 1kg</td>
+          <td class="p-2 text-center">₹80</td>
+          <td class="p-2 text-center">20</td>
+        </tr>
+        <tr class="border-b">
+          <td class="p-2">Milk 500ml</td>
+          <td class="p-2 text-center">₹28</td>
+          <td class="p-2 text-center">50</td>
+        </tr>
+        <tr>
+          <td class="p-2">Soap Bar</td>
+          <td class="p-2 text-center">₹20</td>
+          <td class="p-2 text-center">100</td>
+        </tr>
+      </tbody>
+    </table>
+  </main>
+  <footer class="fixed bottom-0 left-0 right-0 bg-white border-t py-2 flex justify-around text-sm">
+    <a href="vendor-dashboard.html" class="text-blue-600">Dashboard</a>
+    <a href="item-list.html" class="text-blue-600">Items</a>
+    <a href="order-list.html" class="text-blue-600">Orders</a>
+    <a href="vendor-wallet.html" class="text-blue-600">Wallet</a>
+    <a href="issue-center.html" class="text-blue-600">Issues</a>
+    <a href="vendor-profile.html" class="text-blue-600">Profile</a>
+  </footer>
+</body>
+</html>
