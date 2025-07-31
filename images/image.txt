@@ -3,3 +3,7 @@
 # shop1.png - storefront illustration on white background
 # shop2.png - pharmacy icon on white background
 # shop3.png - laundry service icon on white background
+# item1.png - milk carton drawing on white background
+# item2.png - loaf of bread drawing on white background
+# item3.png - detergent bottle on white background
+# avatar.png - simple user silhouette on gray background

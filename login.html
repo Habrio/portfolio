@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="icon" type="image/svg+xml" href="icons/phone.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {theme:{extend:{colors:{primary:'#FF6F00',accent:'#43A047',background:'#FFFFFF','background-soft':'#F5F5F5','text-primary':'#212121','text-secondary':'#6B7280',divider:'#E0E0E0'}}}}
+  </script>
+</head>
+<body class="min-h-screen bg-background-soft flex items-center justify-center text-text-primary">
+  <div class="max-w-md w-full bg-background shadow-lg p-6 space-y-4">
+    <h1 class="text-2xl font-semibold text-center">Sign in</h1>
+    <input type="tel" placeholder="Phone number" value="" class="w-full border border-divider rounded-md p-2" />
+    <a href="otp.html" class="block w-full bg-primary text-white text-center py-2 rounded-md">Continue</a>
+  </div>
+</body>
+</html>
