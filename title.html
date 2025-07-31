@@ -3,18 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Verify OTP</title>
-  <link rel="icon" type="image/svg+xml" href="icons/lock-closed.svg">
+  <title>Welcome</title>
+  <link rel="icon" type="image/png" href="images/Habrio Logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
   tailwind.config = {theme:{extend:{colors:{primary:'#FF6F00',accent:'#43A047',background:'#FFFFFF','background-soft':'#F5F5F5','text-primary':'#212121','text-secondary':'#6B7280',divider:'#E0E0E0'}}}}
   </script>
 </head>
 <body class="min-h-screen bg-background-soft flex items-center justify-center text-text-primary">
-  <div class="max-w-[360px] w-full bg-background shadow-lg p-6 space-y-4">
-    <h1 class="text-2xl font-semibold text-center">Enter OTP</h1>
-    <input type="number" placeholder="123456" class="w-full border border-divider rounded-md p-2" />
-    <a href="onboarding.html" class="block w-full bg-primary text-white text-center py-2 rounded-md">Verify</a>
+  <div class="max-w-[360px] w-full bg-background shadow-lg p-6 flex flex-col items-center space-y-6">
+    <img src="images/Habrio Logo.png" alt="Habrio Logo" class="w-40 h-40 object-contain">
+    <a href="login.html" class="bg-primary text-white px-4 py-2 rounded-md">Continue</a>
   </div>
 </body>
 </html>

@@ -11,7 +11,7 @@
   </script>
 </head>
 <body class="min-h-screen bg-background-soft flex flex-col text-text-primary">
-  <div class="max-w-md mx-auto flex flex-col min-h-screen bg-background shadow-lg">
+  <div class="max-w-[360px] mx-auto flex flex-col min-h-screen bg-background shadow-lg">
     <header class="p-4 flex items-center space-x-2 bg-primary text-white">
       <a href="index.html"><img src="icons/arrow-left.svg" class="w-6 h-6" alt="back"></a>
       <h1 class="flex-1 font-semibold">Orders</h1>
@@ -32,6 +32,25 @@
         <p class="text-sm text-text-secondary">3 items - $12</p>
       </a>
     </main>
-  </div>
+  <nav class="flex justify-around bg-white border-t shadow fixed bottom-0 left-1/2 -translate-x-1/2 w-full max-w-[360px] py-2">
+  <a href="index.html" class="flex flex-col items-center text-primary text-xs">
+    <img src="icons/home.svg" alt="Home" class="w-6 h-6 mb-1">
+    Home
+  </a>
+  <a href="orders.html" class="flex flex-col items-center text-text-secondary text-xs">
+    <img src="icons/clipboard-document-list.svg" alt="Orders" class="w-6 h-6 mb-1">
+    Orders
+  </a>
+  <a href="wallet.html" class="flex flex-col items-center text-text-secondary text-xs">
+    <img src="icons/wallet.svg" alt="Wallet" class="w-6 h-6 mb-1">
+    Wallet
+  </a>
+  <a href="profile.html" class="flex flex-col items-center text-text-secondary text-xs">
+    <img src="icons/user-circle.svg" alt="Profile" class="w-6 h-6 mb-1">
+    Profile
+  </a>
+</nav>
+
+</div>
 </body>
 </html>
