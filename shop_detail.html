@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop Items</title>
+  <link rel="icon" type="image/svg+xml" href="icons/building-storefront.svg">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+  tailwind.config = {theme:{extend:{colors:{primary:'#FF6F00',accent:'#43A047',background:'#FFFFFF','background-soft':'#F5F5F5','text-primary':'#212121','text-secondary':'#6B7280',divider:'#E0E0E0'}}}}
+  </script>
+</head>
+<body class="min-h-screen bg-background-soft flex flex-col text-text-primary">
+  <div class="max-w-md mx-auto flex flex-col min-h-screen bg-background shadow-lg">
+    <header class="p-4 flex items-center space-x-2 bg-primary text-white">
+      <a href="index.html"><img src="icons/arrow-left.svg" class="w-6 h-6" alt="back"></a>
+      <h1 class="flex-1 font-semibold">Local Grocery</h1>
+      <a href="cart.html"><img src="icons/shopping-cart.svg" class="w-6 h-6" alt="cart"></a>
+    </header>
+    <main class="flex-1 overflow-y-auto p-4 space-y-3">
+      <div class="bg-white rounded-lg shadow flex items-center overflow-hidden">
+        <img src="images/item1.png" alt="Item" class="w-20 h-20 object-cover">
+        <div class="flex-1 p-3">
+          <h3 class="font-semibold">Milk</h3>
+          <p class="text-sm text-text-secondary">1 litre pack</p>
+        </div>
+        <button class="bg-accent text-white px-3 py-1 m-3 rounded-md">Add</button>
+      </div>
+      <div class="bg-white rounded-lg shadow flex items-center overflow-hidden">
+        <img src="images/item2.png" alt="Item" class="w-20 h-20 object-cover">
+        <div class="flex-1 p-3">
+          <h3 class="font-semibold">Bread</h3>
+          <p class="text-sm text-text-secondary">Whole wheat</p>
+        </div>
+        <button class="bg-accent text-white px-3 py-1 m-3 rounded-md">Add</button>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
